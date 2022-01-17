@@ -31,4 +31,12 @@ git branch -l 查看本地分支
 删除分支
 git checkout -D <branchName>
 
+ 
+删除分支
+//git checkout -d <branchName>
+
+强制删除分支
+git checkout -D <branchName>
+
+
 
