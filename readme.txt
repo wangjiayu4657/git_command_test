@@ -34,5 +34,5 @@ git checkout -d <branchName>
 强制删除分支
 git checkout -D <branchName>
 
-
-
+暂存内容
+git stash
