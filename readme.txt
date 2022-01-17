@@ -3,7 +3,7 @@ git 命令的练习
 git status: 查看状态
 
 撤销工作区的修改(还没有add)
-git restoer <fileName> 
+git restore <fileName> 
 git checkout <fileName>
 
 将暂存区回退到工作区(已经add但未commit)
