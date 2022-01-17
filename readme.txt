@@ -34,14 +34,6 @@ git checkout -d <branchName>
 强制删除分支
 git checkout -D <branchName>
 
- 
-删除分支
-//git checkout -d <branchName>
-
-强制删除分支
-git checkout -D <branchName>
-
-
 
 
 
