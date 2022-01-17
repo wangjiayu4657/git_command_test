@@ -15,9 +15,13 @@ git reset --hard HEAD~
 或指定回退到具体某一版本
 git reset --hard <commit>
 
+切换并创建分支
+git switch -c <branchName>
+git checkout -b <branchName>
 
 切换分支
-git checkout -b <branchName>
+git switch <branchName>
+git checkout <branchName>
 
 查看分支
 git branch -a 查看所有分支
