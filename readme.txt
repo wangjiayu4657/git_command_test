@@ -46,3 +46,9 @@ git cherry-pick <commit> 将bug提交的修改复制到当前分支,避免重复
 
 建立本地分支和远程分支的关联
 git branch --set-upstream <branch-name> origin/<branch-name>
+
+查看远程库信息
+git remote -v
+
+在本地创建和远程分支对应的分支
+git checkout -b branch-name origin/branch-name
