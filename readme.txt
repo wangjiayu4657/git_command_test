@@ -42,3 +42,6 @@ git merge <branchName> --no-ff -m '描述' 普通模式合并,合并后的历史
 暂存内容
 git stash
 
+
+zai main 分支上修复bug,想要合并到当前develop分支,可以用如下命令
+git cherry-pick <commit> 将bug提交的修改复制到当前分支,避免重复劳动
