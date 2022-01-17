@@ -3,12 +3,12 @@ git 命令的练习
 git status: 查看状态
 
 撤销工作区的修改(还没有add)
-git restoer <fileName> 
-git checkout <fileName>
+git restoer <file-name> 
+git checkout <file-name>
 
 将暂存区回退到工作区(已经add但未commit)
-git restore --staged <fileName>
-git reset --hard HEAD <fileName>
+git restore --staged <file-name>
+git reset --hard HEAD <file-name>
 
 如果已经commit到了本地分支还没有push到远程仓库可以回退到前一版本
 git reset --hard HEAD~ 
@@ -16,12 +16,12 @@ git reset --hard HEAD~
 git reset --hard <commit>
 
 切换并创建分支
-git switch -c <branchName>
-git checkout -b <branchName>
+git switch -c <branch-name>
+git checkout -b <branch-name>
 
 切换分支
-git switch <branchName>
-git checkout <branchName>
+git switch <branch-name>
+git checkout <branch-name>
 
 查看分支
 git branch -a 查看所有分支
@@ -29,19 +29,20 @@ git branch -r 查看远程分支
 git branch -l 查看本地分支
  
 删除分支
-git checkout -d <branchName>
+git checkout -d <branch-name>
 
 强制删除分支
-git checkout -D <branchName>
-
+git checkout -D <branch-name>
 
 合并分支
-git merge <branchName> 快速合并模式,合并后看不出来曾经做过合并
-git merge <branchName> --no-ff -m '描述' 普通模式合并,合并后的历史有分支,能看出来曾经做过合并
+git merge <branch-name> 快速合并模式,合并后看不出来曾经做过合并
+git merge <branch-name> --no-ff -m '描述' 普通模式合并,合并后的历史有分支,能看出来曾经做过合并
 
 暂存内容
 git stash
 
-
 zai main 分支上修复bug,想要合并到当前develop分支,可以用如下命令
 git cherry-pick <commit> 将bug提交的修改复制到当前分支,避免重复劳动
+
+建立本地分支和远程分支的关联
+git branch --set-upstream <branch-name> origin/<branch-name>
