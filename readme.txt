@@ -38,9 +38,7 @@ git checkout -D <branchName>
 合并分支
 git merge <branchName> 快速合并模式,合并后看不出来曾经做过合并
 git merge <branchName> --no-ff -m '描述' 普通模式合并,合并后的历史有分支,能看出来曾经做过合并
-<<<<<<< Updated upstream
 
 暂存内容
 git stash
-=======
->>>>>>> Stashed changes
+
