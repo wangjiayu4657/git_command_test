@@ -16,3 +16,15 @@ git reset --hard HEAD~
 git reset --hard <commit>
 
 
+切换分支
+git checkout -b <branchName>
+
+查看分支
+git branch -a 查看所有分支
+git branch -r 查看远程分支
+git branch -l 查看本地分支
+ 
+删除分支
+git checkout -D <branchName>
+
+
