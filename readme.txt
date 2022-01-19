@@ -3,8 +3,9 @@ git 命令的练习
 git status: 查看状态
 
 撤销工作区的修改(还没有add)
-git restoer <file-name> 
-git checkout <file-name>
+
+git restore <fileName> 
+git checkout <fileName> 或 git checkout -- <fileName>
 
 将暂存区回退到工作区(已经add但未commit)
 git restore --staged <file-name>
@@ -67,10 +68,4 @@ git push origin <tag-name>
 git push origin --tags
 从远程删除标签
 git push origin :refs/tags/<tag-name>
-
-
-
-
-
-
 
